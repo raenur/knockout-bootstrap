@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Knockout with jQuery and Bootstrap</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Knockout with jQuery and Bootstrap</h1>
+    <form class="form-horizontal">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="exampleInputEmail1" class="col-sm-3">Email address</label>
+                    <div class="col-sm-6">
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1" class="col-sm-3">Password</label>
+                    <div class="col-sm-6">
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="select1" class="col-sm-3">Select one</label>
+                    <div class="col-sm-6">
+                        <select data-bind="options: options, value: select1" id="select1" class="form-control">
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="exampleInputFile">File input</label>
+                    <input type="file" id="exampleInputFile">
+                    <p data-bind="text: select1">Example block-level help text here.</p>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox">Check me
+                    </label>
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-default">Submit</button>
+    </form>
+</div>
+<script src="../node_modules/jquery/dist/jquery.js"></script>
+<script src="../node_modules/knockout/build/output/knockout-latest.js"></script>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="form.js"></script>
+<script src="//localhost:35729/livereload.js"></script>
+</body>
+</html>
